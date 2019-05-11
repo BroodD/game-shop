@@ -1,0 +1,77 @@
+@import 'mixins'
+@import 'vars'
+
+
+// +my-preloader($pre, $footer)
++font('Roboto', 'Roboto-Regular', $type:'ttf', $path:'')
+
+
+// reset
+body
+	background-color: $body
+	color: $text
+	font-family: $ff-1
+	// font-size: 20px
+
++links(inherit)
+	text-decoration: none
+
+input
+	outline: none
+	&:hover, &:focus
+		outline: none
+
+img, svg, iframe
+	max-width: 100%
+	height: auto
+	height: inherit
+
+p
+	margin: 0 0 10px
+	font-family: inherit
+	line-height: 1.4em
+
+h1, h2, h3, h4, h5, h6
+	font-family: inherit
+	font-weight: 500
+	line-height: 1.1
+	color: inherit
+	margin-top: 10px
+	margin-bottom: 10px
+
+hr
+	background-color: $hr
+	border: none
+
+article
+	margin: 10px 0
+
+ul
+	// padding-left: 0
+	margin: 0
+	// list-style-type: none
+
+[type="hidden"]
+	display: none
+	
+.m0
+	margin: 0
+
+.mt20
+	margin-top: 20px
+
+.p-lr-0
+	padding-left: 0
+	padding-right: 0
+
+.p
+	padding-left: 15px
+	padding-right: 15px
+
+.p-big
+	padding-left: 30px
+	padding-right: 30px
+
+.pb20
+	padding-bottom: 20px
+
